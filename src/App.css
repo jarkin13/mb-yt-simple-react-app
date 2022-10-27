@@ -1,3 +1,10 @@
 .app {
   font-family: 'Roboto', sans-serif;
 }
+
+.video-previews {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1880px;
+  margin: 0 16px;
+}
