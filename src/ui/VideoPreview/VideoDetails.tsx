@@ -16,7 +16,7 @@ const VideoDetails = ({
   timePostedAgo
 }: VideoDetailsProps): ReactElement => {
   return (
-    <div>
+    <div className="video-details">
       <h1>{title}</h1>
       <h2>
         {author} {verified && <span>✓</span>}
