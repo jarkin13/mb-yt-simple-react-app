@@ -1,13 +1,20 @@
+import { ReactElement } from 'react'
+
 interface ShortsDetailsProps {
   viewsCurrent: string
-  ShortsTitle: string
+  shortsTitle: string
 }
 
-const ShortsDetails = ({ viewsCurrent, ShortsTitle }) => {
-  ;<div className="shortsDelails">
-    <h1>{ShortsTitle}</h1>
-    <div>{viewsCurrent} views</div>
-  </div>
+const ShortsDetails = ({
+  viewsCurrent,
+  shortsTitle
+}: ShortsDetailsProps): ReactElement => {
+  return (
+    <div className="shorts-Details">
+      <h1>{shortsTitle}</h1>
+      <div className="views">{viewsCurrent} views</div>
+    </div>
+  )
 }
 
 export default ShortsDetails
