@@ -33,6 +33,11 @@ const App = (): ReactElement => (
         shortsTitle="when 2Pac tried to G-check Nas"
         viewsCurrent="17M"
       />
+      <ShortsPreview
+        shortsimage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
+        shortsTitle="React Most Asked Interview"
+        viewsCurrent="471K"
+      />
     </div>
   </div>
 )

@@ -8,3 +8,10 @@
   max-width: 1880px;
   margin: 0 16px;
 }
+
+.shorts-previews {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1880px;
+  margin: 0 16px;
+}
