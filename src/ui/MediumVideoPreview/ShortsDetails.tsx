@@ -1,14 +1,14 @@
 import { ReactElement } from 'react'
 
-interface MediumVideoDetailsProps {
+interface ShortsDetailsProps {
   numberOfViews?: string
   shortsTitle: string
 }
 
-const MediumVideoDetails = ({
+const ShortsDetails = ({
   numberOfViews,
   shortsTitle
-}: MediumVideoDetailsProps): ReactElement => {
+}: ShortsDetailsProps): ReactElement => {
   return (
     <div className="shorts-details">
       <h1>{shortsTitle}</h1>
@@ -17,4 +17,4 @@ const MediumVideoDetails = ({
   )
 }
 
-export default MediumVideoDetails
+export default ShortsDetails

@@ -1,5 +1,6 @@
 import { ReactElement } from 'react'
-import MediumVideoDetails from './MediumVideoDetails'
+import ShortsDetails from './ShortsDetails'
+import MovieDetails from './MovieDetails'
 import './styles.css'
 
 interface MediumVideoPreviewProps {
@@ -17,16 +18,33 @@ interface MediumVideoPreviewProps {
 const MediumVideoPreview = ({
   shortsImage,
   shortsTitle,
-  numberOfViews
+  numberOfViews,
+  type,
+  genre,
+  year,
+  movieRating,
+  buy,
+  rent
 }: MediumVideoPreviewProps): ReactElement => {
-  return (
+  return type === 'short' ? (
     <div className="shorts-preview">
       <div>
         <img src={shortsImage} alt={shortsTitle} />
       </div>
-      <MediumVideoDetails
+      <ShortsDetails shortsTitle={shortsTitle} numberOfViews={numberOfViews} />
+    </div>
+  ) : (
+    <div className="movie-preview">
+      <div>
+        <img src={shortsImage} alt={shortsTitle} />
+      </div>
+      <MovieDetails
         shortsTitle={shortsTitle}
-        numberOfViews={numberOfViews}
+        genre={genre}
+        movieRating={movieRating}
+        year={year}
+        buy={buy}
+        rent={rent}
       />
     </div>
   )
