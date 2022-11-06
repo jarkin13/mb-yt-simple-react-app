@@ -29,14 +29,16 @@ const App = (): ReactElement => (
     </div>
     <div className="shorts-previews">
       <MediumVideoPreview
-        shortsimage="https://i.ytimg.com/vi/_5klkymMRi4/hq720_2.jpg?sqp=-oaymwEkCJUDENAFSFryq4qpAxYIARUAAAAAJQAAyEI9AICiQ3gB0AEB&amp;rs=AOn4CLDyS8H7WdzbglIkXUvrVpv9yG3tEQ"
+        shortsImage="https://i.ytimg.com/vi/_5klkymMRi4/hq720_2.jpg?sqp=-oaymwEkCJUDENAFSFryq4qpAxYIARUAAAAAJQAAyEI9AICiQ3gB0AEB&amp;rs=AOn4CLDyS8H7WdzbglIkXUvrVpv9yG3tEQ"
         shortsTitle="when 2Pac tried to G-check Nas"
-        numberofViews="17M"
+        numberOfViews="17M"
+        type="short"
       />
       <MediumVideoPreview
-        shortsimage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
+        shortsImage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
         shortsTitle="React Most Asked Interview"
-        numberofViews="471k"
+        numberOfViews="471k"
+        type="short"
       />
     </div>
   </div>
