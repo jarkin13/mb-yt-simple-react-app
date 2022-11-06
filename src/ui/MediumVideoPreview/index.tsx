@@ -3,24 +3,24 @@ import MediumVideoDetails from './MediumVideoDetails'
 import './styles.css'
 
 interface MediumVideoPreviewProps {
-  shortsimage: string
+  shortsImage: string
   shortsTitle: string
-  numberofViews: string
+  numberOfViews: string
 }
 
 const MediumVideoPreview = ({
-  shortsimage,
+  shortsImage,
   shortsTitle,
-  numberofViews
+  numberOfViews
 }: MediumVideoPreviewProps): ReactElement => {
   return (
     <div className="shorts-preview">
       <div>
-        <img src={shortsimage} alt={shortsTitle} />
+        <img src={shortsImage} alt={shortsTitle} />
       </div>
       <MediumVideoDetails
         shortsTitle={shortsTitle}
-        numberofViews={numberofViews}
+        numberOfViews={numberOfViews}
       />
     </div>
   )
