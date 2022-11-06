@@ -2,6 +2,7 @@ import { ReactElement } from 'react'
 import Header from './ui/Header'
 import VideoPreview from './ui/VideoPreview'
 import './App.css'
+import ShortsPreview from './ui/ShortsPreview'
 
 const App = (): ReactElement => (
   <div className="app">
@@ -24,6 +25,18 @@ const App = (): ReactElement => (
         numberOfViews="2.7M"
         timePostedAgo="20 hours"
         authorImage="https://yt3.ggpht.com/lkH37D712tiyphnu0Id0D5MwwQ7IRuwgQLVD05iMXlDWO-kDHut3uI4MgIEAQ9StK0qOST7fiA=s68-c-k-c0x00ffffff-no-rj"
+      />
+    </div>
+    <div className="shorts-previews">
+      <ShortsPreview
+        shortsimage="https://i.ytimg.com/vi/_5klkymMRi4/hq720_2.jpg?sqp=-oaymwEkCJUDENAFSFryq4qpAxYIARUAAAAAJQAAyEI9AICiQ3gB0AEB&amp;rs=AOn4CLDyS8H7WdzbglIkXUvrVpv9yG3tEQ"
+        shortsTitle="when 2Pac tried to G-check Nas"
+        numberofViews="17M"
+      />
+      <ShortsPreview
+        shortsimage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
+        shortsTitle="React Most Asked Interview"
+        numberofViews="471k"
       />
     </div>
   </div>

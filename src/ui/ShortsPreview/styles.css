@@ -1,0 +1,25 @@
+.shorts-preview {
+  max-width: 152px;
+  max-height: 268px;
+  margin: 24px 0 24px 8px;
+}
+
+.shorts-preview h1 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 12px 24px 4px 0;
+}
+
+.shorts-preview img {
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 6%;
+}
+
+.shorts-preview,
+.shorts-preview h2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
