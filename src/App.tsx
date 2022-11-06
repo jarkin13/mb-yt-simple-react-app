@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 import Header from './ui/Header'
 import VideoPreview from './ui/VideoPreview'
 import './App.css'
-import ShortsPreview from './ui/ShortsPreview'
+import MediumVideoPreview from './ui/MediumVideoPreview'
 
 const App = (): ReactElement => (
   <div className="app">
@@ -28,12 +28,12 @@ const App = (): ReactElement => (
       />
     </div>
     <div className="shorts-previews">
-      <ShortsPreview
+      <MediumVideoPreview
         shortsimage="https://i.ytimg.com/vi/_5klkymMRi4/hq720_2.jpg?sqp=-oaymwEkCJUDENAFSFryq4qpAxYIARUAAAAAJQAAyEI9AICiQ3gB0AEB&amp;rs=AOn4CLDyS8H7WdzbglIkXUvrVpv9yG3tEQ"
         shortsTitle="when 2Pac tried to G-check Nas"
         numberofViews="17M"
       />
-      <ShortsPreview
+      <MediumVideoPreview
         shortsimage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
         shortsTitle="React Most Asked Interview"
         numberofViews="471k"

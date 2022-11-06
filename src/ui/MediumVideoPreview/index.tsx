@@ -1,26 +1,29 @@
 import { ReactElement } from 'react'
-import ShortsDetails from './ShortsDetails'
+import MediumVideoDetails from './MediumVideoDetails'
 import './styles.css'
 
-interface ShortsPreviewProps {
+interface MediumVideoPreviewProps {
   shortsimage: string
   shortsTitle: string
   numberofViews: string
 }
 
-const ShortsPreview = ({
+const MediumVideoPreview = ({
   shortsimage,
   shortsTitle,
   numberofViews
-}: ShortsPreviewProps): ReactElement => {
+}: MediumVideoPreviewProps): ReactElement => {
   return (
     <div className="shorts-preview">
       <div>
         <img src={shortsimage} alt={shortsTitle} />
       </div>
-      <ShortsDetails shortsTitle={shortsTitle} numberofViews={numberofViews} />
+      <MediumVideoDetails
+        shortsTitle={shortsTitle}
+        numberofViews={numberofViews}
+      />
     </div>
   )
 }
 
-export default ShortsPreview
+export default MediumVideoPreview
