@@ -17,6 +17,7 @@ const MovieDetails = ({
   buy,
   rent
 }: MovieDetailsProps): ReactElement => {
+  // determine what buy/rent text is
   return (
     <div className="movie-details">
       <h1>{shortsTitle}</h1>
@@ -24,6 +25,7 @@ const MovieDetails = ({
         {genre} - {year}
       </div>
       <div>
+        <span>show buy/rent text here</span>
         <span className="movie-rating">{movieRating}</span>
       </div>
     </div>
