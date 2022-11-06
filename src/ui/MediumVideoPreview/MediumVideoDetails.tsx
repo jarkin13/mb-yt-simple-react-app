@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 
 interface MediumVideoDetailsProps {
-  numberOfViews: string
+  numberOfViews?: string
   shortsTitle: string
 }
 

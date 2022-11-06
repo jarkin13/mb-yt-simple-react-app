@@ -5,7 +5,13 @@ import './styles.css'
 interface MediumVideoPreviewProps {
   shortsImage: string
   shortsTitle: string
-  numberOfViews: string
+  numberOfViews?: string
+  type: 'movie' | 'short'
+  genre?: string
+  year?: number
+  movieRating?: 'G' | 'PG' | 'PG-13' | 'R' | 'NR'
+  buy?: boolean
+  rent?: boolean
 }
 
 const MediumVideoPreview = ({
