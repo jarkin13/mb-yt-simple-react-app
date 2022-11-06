@@ -31,12 +31,12 @@ const App = (): ReactElement => (
       <ShortsPreview
         shortsimage="https://i.ytimg.com/vi/_5klkymMRi4/hq720_2.jpg?sqp=-oaymwEkCJUDENAFSFryq4qpAxYIARUAAAAAJQAAyEI9AICiQ3gB0AEB&amp;rs=AOn4CLDyS8H7WdzbglIkXUvrVpv9yG3tEQ"
         shortsTitle="when 2Pac tried to G-check Nas"
-        viewsCurrent="17M"
+        numberofViews="17M"
       />
       <ShortsPreview
         shortsimage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
         shortsTitle="React Most Asked Interview"
-        viewsCurrent="471K"
+        numberofViews="471k"
       />
     </div>
   </div>

@@ -5,20 +5,20 @@ import './styles.css'
 interface ShortsPreviewProps {
   shortsimage: string
   shortsTitle: string
-  viewsCurrent: string
+  numberofViews: string
 }
 
 const ShortsPreview = ({
   shortsimage,
   shortsTitle,
-  viewsCurrent
+  numberofViews
 }: ShortsPreviewProps): ReactElement => {
   return (
-    <div className="shorts-Preview">
+    <div className="shorts-preview">
       <div>
         <img src={shortsimage} alt={shortsTitle} />
       </div>
-      <ShortsDetails shortsTitle={shortsTitle} viewsCurrent={viewsCurrent} />
+      <ShortsDetails shortsTitle={shortsTitle} numberofViews={numberofViews} />
     </div>
   )
 }
