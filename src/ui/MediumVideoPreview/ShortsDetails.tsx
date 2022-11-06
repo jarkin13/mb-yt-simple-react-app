@@ -1,18 +1,18 @@
 import { ReactElement } from 'react'
 
 interface ShortsDetailsProps {
-  numberofViews: string
+  numberOfViews?: string
   shortsTitle: string
 }
 
 const ShortsDetails = ({
-  numberofViews,
+  numberOfViews,
   shortsTitle
 }: ShortsDetailsProps): ReactElement => {
   return (
     <div className="shorts-details">
       <h1>{shortsTitle}</h1>
-      <div className="views">{numberofViews} views</div>
+      <div className="views">{numberOfViews} views</div>
     </div>
   )
 }
