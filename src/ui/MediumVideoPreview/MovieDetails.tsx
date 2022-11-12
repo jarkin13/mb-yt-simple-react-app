@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import { ReactElement, useState } from 'react'
 
 interface MovieDetailsProps {
   shortsTitle: string
@@ -17,15 +17,16 @@ const MovieDetails = ({
   buy,
   rent
 }: MovieDetailsProps): ReactElement => {
-  // determine what buy/rent text is
   return (
     <div className="movie-details">
       <h1>{shortsTitle}</h1>
       <div>
-        {genre} - {year}
+        {genre} • {year}
       </div>
       <div>
-        <span>show buy/rent text here</span>
+        <span className="purchase-options">
+          {rent === true ? 'Buy or Rent' : 'buy'}
+        </span>
         <span className="movie-rating">{movieRating}</span>
       </div>
     </div>

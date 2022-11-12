@@ -35,7 +35,7 @@ const MediumVideoPreview = ({
     </div>
   ) : (
     <div className="movie-preview">
-      <div>
+      <div className="movie-image">
         <img src={shortsImage} alt={shortsTitle} />
       </div>
       <MovieDetails

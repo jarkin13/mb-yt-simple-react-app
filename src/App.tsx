@@ -41,6 +41,18 @@ const App = (): ReactElement => (
         type="short"
       />
     </div>
+    <div className="movie-previews">
+      <MediumVideoPreview
+        shortsTitle="First Sunday"
+        shortsImage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
+        genre="comedy"
+        movieRating="PG-13"
+        year={2008}
+        buy={true}
+        rent={true}
+        type={'movie'}
+      />
+    </div>
   </div>
 )
 
