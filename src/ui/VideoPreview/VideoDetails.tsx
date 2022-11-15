@@ -21,7 +21,7 @@ const VideoDetails = ({
       <h2>
         {author} {verified && <span>✓</span>}
       </h2>
-      <div>
+      <div className="posted-details">
         {numberOfViews} views - {timePostedAgo} ago
       </div>
     </div>

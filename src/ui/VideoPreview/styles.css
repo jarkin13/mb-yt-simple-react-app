@@ -37,3 +37,41 @@
   overflow: hidden;
   margin-right: 12px;
 }
+
+.suggested-video img {
+  width: 168px;
+  height: 94px;
+  border-radius: 8px;
+}
+
+.suggested-video-content h1 {
+  font-size: 14px;
+  max-width: 202px;
+  margin-bottom: 4px;
+}
+.suggested-video-content,
+.suggested-video-content h2 {
+  font-size: 12px;
+  padding-top: 12px;
+  font-weight: 500;
+}
+
+.suggested-video {
+  display: flex;
+  margin-top: 40px;
+}
+.suggested-video-content {
+  margin-top: 12px;
+  height: 94px;
+  margin-top: -10px;
+  padding-left: 8px;
+}
+
+.suggested-video-content h1,
+.suggested-video-content h2 {
+  margin: 0;
+}
+
+.posted-details {
+  margin-top: 10px;
+}

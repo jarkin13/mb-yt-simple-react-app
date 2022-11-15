@@ -11,9 +11,9 @@ const VideoButton = ({
   videoButtonText
 }: VideoButtonProps): ReactElement => {
   return (
-    <div>
-      {videoButtonIcon}
-      {videoButtonText}
+    <div className="video-buttons-details">
+      <img src={videoButtonIcon} alt="" />
+      <h1>{videoButtonText}</h1>
     </div>
   )
 }

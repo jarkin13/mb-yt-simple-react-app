@@ -3,12 +3,15 @@ import Header from './ui/Header'
 import VideoPreview from './ui/VideoPreview'
 import './App.css'
 import MediumVideoPreview from './ui/MediumVideoPreview'
+import VideoButton from './ui/VideoButton'
+import LikeButton from './LikeButton.svg'
 
 const App = (): ReactElement => (
   <div className="app">
     <Header />
     <div className="video-previews">
       <VideoPreview
+        type="video-preview"
         image="https://i.ytimg.com/vi/esFyZ-eOKQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXrVUEmbyniOIJO11l2VtoZpNu9A"
         title="Travis Hunter's First College Football Game"
         author="Travis Hunter"
@@ -18,6 +21,7 @@ const App = (): ReactElement => (
         authorImage="https://yt3.ggpht.com/Gxul2Nz7A8OauCRq-NENnBQ400XnQmNEthwn9s2GtnMAg32kj7G0tjHgbY-wgvIPMrcep7-m=s68-c-k-c0x00ffffff-no-rj"
       />
       <VideoPreview
+        type="video-preview"
         image="https://i.ytimg.com/vi/C6Ni9rH6VmA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBunz8-hEWgyhxkvuigiLb8MYMT4A"
         title="The New iPad is Weird!"
         author="Marques Brownlee"
@@ -51,6 +55,21 @@ const App = (): ReactElement => (
         buy={true}
         rent={true}
         type={'movie'}
+      />
+    </div>
+    <div className="video-button">
+      <VideoButton videoButtonIcon={LikeButton} videoButtonText={'14k'} />
+    </div>
+    <div className="suggested-videos">
+      <VideoPreview
+        type="suggested-video-preview"
+        image="https://i.ytimg.com/vi/esFyZ-eOKQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXrVUEmbyniOIJO11l2VtoZpNu9A"
+        title="Travis Hunter's First College Football Game"
+        author="Travis Hunter"
+        verified={true}
+        numberOfViews="303k"
+        timePostedAgo="1 day"
+        authorImage="https://yt3.ggpht.com/Gxul2Nz7A8OauCRq-NENnBQ400XnQmNEthwn9s2GtnMAg32kj7G0tjHgbY-wgvIPMrcep7-m=s68-c-k-c0x00ffffff-no-rj"
       />
     </div>
   </div>
