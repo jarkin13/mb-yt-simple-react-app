@@ -39,7 +39,7 @@ const MediumVideoPreview = ({
         <img src={shortsImage} alt={shortsTitle} />
       </div>
       <MovieDetails
-        shortsTitle={shortsTitle}
+        movieTitle={shortsTitle}
         genre={genre}
         movieRating={movieRating}
         year={year}

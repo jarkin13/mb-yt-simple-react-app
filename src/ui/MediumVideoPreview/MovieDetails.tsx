@@ -1,7 +1,7 @@
-import { ReactElement, useState } from 'react'
+import { ReactElement } from 'react'
 
 interface MovieDetailsProps {
-  shortsTitle: string
+  movieTitle: string
   genre?: string
   year?: number
   movieRating?: 'G' | 'PG' | 'PG-13' | 'R' | 'NR'
@@ -10,7 +10,7 @@ interface MovieDetailsProps {
 }
 
 const MovieDetails = ({
-  shortsTitle,
+  movieTitle,
   genre,
   year,
   movieRating,
@@ -19,13 +19,17 @@ const MovieDetails = ({
 }: MovieDetailsProps): ReactElement => {
   return (
     <div className="movie-details">
-      <h1>{shortsTitle}</h1>
+      <h1>{movieTitle}</h1>
       <div>
         {genre} • {year}
       </div>
       <div>
         <span className="purchase-options">
-          {rent === true ? 'Buy or Rent' : 'buy'}
+          {rent === true && buy === true
+            ? 'Buy or Rent'
+            : rent === true
+            ? 'Rent'
+            : 'Buy'}
         </span>
         <span className="movie-rating">{movieRating}</span>
       </div>

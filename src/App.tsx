@@ -9,7 +9,7 @@ import LikeButton from './LikeButton.svg'
 const App = (): ReactElement => (
   <div className="app">
     <Header />
-    <div className="video-previews">
+    <div className="previews video-previews">
       <VideoPreview
         type="video-preview"
         image="https://i.ytimg.com/vi/esFyZ-eOKQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXrVUEmbyniOIJO11l2VtoZpNu9A"
@@ -31,7 +31,7 @@ const App = (): ReactElement => (
         authorImage="https://yt3.ggpht.com/lkH37D712tiyphnu0Id0D5MwwQ7IRuwgQLVD05iMXlDWO-kDHut3uI4MgIEAQ9StK0qOST7fiA=s68-c-k-c0x00ffffff-no-rj"
       />
     </div>
-    <div className="shorts-previews">
+    <div className="previews shorts-previews">
       <MediumVideoPreview
         shortsImage="https://i.ytimg.com/vi/_5klkymMRi4/hq720_2.jpg?sqp=-oaymwEkCJUDENAFSFryq4qpAxYIARUAAAAAJQAAyEI9AICiQ3gB0AEB&amp;rs=AOn4CLDyS8H7WdzbglIkXUvrVpv9yG3tEQ"
         shortsTitle="when 2Pac tried to G-check Nas"
@@ -45,7 +45,7 @@ const App = (): ReactElement => (
         type="short"
       />
     </div>
-    <div className="movie-previews">
+    <div className="previews movie-previews">
       <MediumVideoPreview
         shortsTitle="First Sunday"
         shortsImage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
@@ -60,7 +60,7 @@ const App = (): ReactElement => (
     <div className="video-button">
       <VideoButton videoButtonIcon={LikeButton} videoButtonText={'14k'} />
     </div>
-    <div className="suggested-videos">
+    <div className="previews suggested-videos">
       <VideoPreview
         type="suggested-video-preview"
         image="https://i.ytimg.com/vi/esFyZ-eOKQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXrVUEmbyniOIJO11l2VtoZpNu9A"

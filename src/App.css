@@ -2,7 +2,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.shorts-previews {
+.previews {
   display: flex;
   flex-wrap: wrap;
   max-width: 1880px;
@@ -10,16 +10,5 @@
 }
 
 .movie-previews {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1880px;
-  margin: 0 16px;
   margin-top: 40px;
-}
-
-.video-previews {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1880px;
-  margin: 0 16px;
 }
