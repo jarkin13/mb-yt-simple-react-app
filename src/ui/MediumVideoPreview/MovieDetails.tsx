@@ -21,15 +21,11 @@ const MovieDetails = ({
     <div className="movie-details">
       <h1>{movieTitle}</h1>
       <div>
-        {genre} • {year}
+        {genre && `${genre} •`} {year}
       </div>
       <div>
         <span className="purchase-options">
-          {rent === true && buy === true
-            ? 'Buy or Rent'
-            : rent === true
-            ? 'Rent'
-            : 'Buy'}
+          {rent && buy ? 'Buy or Rent' : rent ? 'Rent' : 'Buy'}
         </span>
         <span className="movie-rating">{movieRating}</span>
       </div>

@@ -33,23 +33,22 @@ const App = (): ReactElement => (
     </div>
     <div className="previews shorts-previews">
       <MediumVideoPreview
-        shortsImage="https://i.ytimg.com/vi/_5klkymMRi4/hq720_2.jpg?sqp=-oaymwEkCJUDENAFSFryq4qpAxYIARUAAAAAJQAAyEI9AICiQ3gB0AEB&amp;rs=AOn4CLDyS8H7WdzbglIkXUvrVpv9yG3tEQ"
-        shortsTitle="when 2Pac tried to G-check Nas"
+        videoImage="https://i.ytimg.com/vi/_5klkymMRi4/hq720_2.jpg?sqp=-oaymwEkCJUDENAFSFryq4qpAxYIARUAAAAAJQAAyEI9AICiQ3gB0AEB&amp;rs=AOn4CLDyS8H7WdzbglIkXUvrVpv9yG3tEQ"
+        videoTitle="when 2Pac tried to G-check Nas"
         numberOfViews="17M"
         type="short"
       />
       <MediumVideoPreview
-        shortsImage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
-        shortsTitle="React Most Asked Interview"
+        videoImage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
+        videoTitle="React Most Asked Interview"
         numberOfViews="471k"
         type="short"
       />
     </div>
     <div className="previews movie-previews">
       <MediumVideoPreview
-        shortsTitle="First Sunday"
-        shortsImage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
-        genre="comedy"
+        videoTitle="First Sunday"
+        videoImage="https://i.ytimg.com/vi/L0DWAVbdEaM/hq720_2.jpg?sqp=-oaymwEdCJYDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&amp;rs=AOn4CLDnePhVQzup5CTnirVZpZZQii39rg"
         movieRating="PG-13"
         year={2008}
         buy={true}
