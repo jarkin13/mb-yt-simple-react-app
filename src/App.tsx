@@ -10,7 +10,7 @@ import SmallVideoPreview from './ui/SmallVideoPreview'
 const App = (): ReactElement => (
   <div className="app">
     <Header />
-    <div className="previews video-previews">
+    <div className="previews large-video-previews">
       <VideoPreview
         largevideoimage="https://i.ytimg.com/vi/esFyZ-eOKQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXrVUEmbyniOIJO11l2VtoZpNu9A"
         title="Travis Hunter's First College Football Game"
@@ -58,7 +58,7 @@ const App = (): ReactElement => (
     <div className="video-button">
       <VideoButton videoButtonIcon={LikeButton} videoButtonText={'14k'} />
     </div>
-    <div className="previews suggested-videos">
+    <div className="previews small-video-previews">
       <SmallVideoPreview
         smallvideoimage="https://i.ytimg.com/vi/esFyZ-eOKQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXrVUEmbyniOIJO11l2VtoZpNu9A"
         title="Travis Hunter's First College Football Game"
