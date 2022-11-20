@@ -1,23 +1,23 @@
 import { ReactElement } from 'react'
 
 interface VideoDetailsProps {
-  title: string
+  smallVideoTitle: string
   author: string
   verified: boolean
   numberOfViews: string
   timePostedAgo: string
 }
 
-const VideoDetails = ({
-  title,
+const SmallVideoDetails = ({
+  smallVideoTitle,
   author,
   verified,
   numberOfViews,
   timePostedAgo
 }: VideoDetailsProps): ReactElement => {
   return (
-    <div className="video-details">
-      <h1>{title}</h1>
+    <div className="small-video-details">
+      <h1>{smallVideoTitle}</h1>
       <h2>
         {author} {verified && <span>✓</span>}
       </h2>
@@ -28,4 +28,4 @@ const VideoDetails = ({
   )
 }
 
-export default VideoDetails
+export default SmallVideoDetails
