@@ -2,8 +2,8 @@ import { ReactElement } from 'react'
 import './styles.css'
 import SmallVideoDetails from '../SmallVideoPreview/SmallVideoDetails'
 
-interface VideoPreviewProps {
-  smallvideoimage: string
+interface SmallVideoPreviewProps {
+  smallVideoImage: string
   title: string
   author: string
   verified: boolean
@@ -12,16 +12,16 @@ interface VideoPreviewProps {
 }
 
 const SmallVideoPreview = ({
-  smallvideoimage,
+  smallVideoImage,
   title,
   author,
   verified,
   numberOfViews,
   timePostedAgo
-}: VideoPreviewProps): ReactElement => {
+}: SmallVideoPreviewProps): ReactElement => {
   return (
     <div className="small-video-preview">
-      <img src={smallvideoimage} alt={title} />
+      <img src={smallVideoImage} alt={title} />
       <div className="small-video-content">
         <SmallVideoDetails
           smallVideoTitle={title}

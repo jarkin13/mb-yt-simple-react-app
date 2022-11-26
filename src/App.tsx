@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
 import Header from './ui/Header'
-import VideoPreview from './ui/VideoPreview'
+import LargeVideoPreview from './ui/LargeVideoPreview'
 import './App.css'
 import MediumVideoPreview from './ui/MediumVideoPreview'
 import VideoButton from './ui/VideoButton'
@@ -11,8 +11,8 @@ const App = (): ReactElement => (
   <div className="app">
     <Header />
     <div className="previews large-video-previews">
-      <VideoPreview
-        largevideoimage="https://i.ytimg.com/vi/esFyZ-eOKQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXrVUEmbyniOIJO11l2VtoZpNu9A"
+      <LargeVideoPreview
+        largeVideoImage="https://i.ytimg.com/vi/esFyZ-eOKQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXrVUEmbyniOIJO11l2VtoZpNu9A"
         title="Travis Hunter's First College Football Game"
         author="Travis Hunter"
         verified={true}
@@ -20,8 +20,8 @@ const App = (): ReactElement => (
         timePostedAgo="1 day"
         authorImage="https://yt3.ggpht.com/Gxul2Nz7A8OauCRq-NENnBQ400XnQmNEthwn9s2GtnMAg32kj7G0tjHgbY-wgvIPMrcep7-m=s68-c-k-c0x00ffffff-no-rj"
       />
-      <VideoPreview
-        largevideoimage="https://i.ytimg.com/vi/C6Ni9rH6VmA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBunz8-hEWgyhxkvuigiLb8MYMT4A"
+      <LargeVideoPreview
+        largeVideoImage="https://i.ytimg.com/vi/C6Ni9rH6VmA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBunz8-hEWgyhxkvuigiLb8MYMT4A"
         title="The New iPad is Weird!"
         author="Marques Brownlee"
         verified={true}
@@ -60,7 +60,7 @@ const App = (): ReactElement => (
     </div>
     <div className="previews small-video-previews">
       <SmallVideoPreview
-        smallvideoimage="https://i.ytimg.com/vi/esFyZ-eOKQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXrVUEmbyniOIJO11l2VtoZpNu9A"
+        smallVideoImage="https://i.ytimg.com/vi/esFyZ-eOKQc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXrVUEmbyniOIJO11l2VtoZpNu9A"
         title="Travis Hunter's First College Football Game"
         author="Travis Hunter"
         verified={true}
