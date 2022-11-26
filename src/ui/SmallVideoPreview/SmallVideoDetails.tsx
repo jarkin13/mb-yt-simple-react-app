@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
 
-interface SmallVideoProps {
+interface SmallVideoDetailsProps {
   smallVideoTitle: string
   author: string
   verified: boolean
@@ -14,7 +14,7 @@ const SmallVideoDetails = ({
   verified,
   numberOfViews,
   timePostedAgo
-}: SmallVideoProps): ReactElement => {
+}: SmallVideoDetailsProps): ReactElement => {
   return (
     <div className="small-video-details">
       <h1>{smallVideoTitle}</h1>
