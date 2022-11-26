@@ -1,0 +1,20 @@
+.video-buttons-details img {
+  width: 62px;
+  height: 62px;
+  margin-left: -20px;
+}
+
+.video-buttons-details button {
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+  max-height: 36px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 12px;
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  white-space: nowrap;
+  cursor: pointer;
+}

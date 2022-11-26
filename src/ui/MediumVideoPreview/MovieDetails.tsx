@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 
 interface MovieDetailsProps {
-  shortsTitle: string
+  movieTitle: string
   genre?: string
   year?: number
   movieRating?: 'G' | 'PG' | 'PG-13' | 'R' | 'NR'
@@ -10,22 +10,23 @@ interface MovieDetailsProps {
 }
 
 const MovieDetails = ({
-  shortsTitle,
+  movieTitle,
   genre,
   year,
   movieRating,
   buy,
   rent
 }: MovieDetailsProps): ReactElement => {
-  // determine what buy/rent text is
   return (
     <div className="movie-details">
-      <h1>{shortsTitle}</h1>
+      <h1>{movieTitle}</h1>
       <div>
-        {genre} - {year}
+        {genre && `${genre} •`} {year}
       </div>
       <div>
-        <span>show buy/rent text here</span>
+        <span className="purchase-options">
+          {rent && buy ? 'Buy or Rent' : rent ? 'Rent' : 'Buy'}
+        </span>
         <span className="movie-rating">{movieRating}</span>
       </div>
     </div>

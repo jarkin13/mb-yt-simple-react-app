@@ -1,9 +1,9 @@
 import { ReactElement } from 'react'
-import VideoDetails from './VideoDetails'
+import LargeVideoDetails from './LargeVideoDetails'
 import './styles.css'
 
-interface VideoPreviewProps {
-  image: string
+interface LargeVideoPreviewProps {
+  largeVideoImage: string
   title: string
   author: string
   authorImage: string
@@ -12,24 +12,24 @@ interface VideoPreviewProps {
   timePostedAgo: string
 }
 
-const VideoPreview = ({
-  image,
+const LargeVideoPreview = ({
+  largeVideoImage,
   title,
-  author,
   authorImage,
+  author,
   verified,
   numberOfViews,
   timePostedAgo
-}: VideoPreviewProps): ReactElement => {
+}: LargeVideoPreviewProps): ReactElement => {
   return (
-    <div className="video-preview">
-      <img src={image} alt={title} />
-      <div className="video-content">
+    <div className="large-video-preview">
+      <img src={largeVideoImage} alt={title} />
+      <div className="large-video-content">
         <div className="author-image">
           <img src={authorImage} alt={author} />
         </div>
-        <VideoDetails
-          title={title}
+        <LargeVideoDetails
+          largeVideoTitle={title}
           author={author}
           verified={verified}
           numberOfViews={numberOfViews}
@@ -40,4 +40,4 @@ const VideoPreview = ({
   )
 }
 
-export default VideoPreview
+export default LargeVideoPreview
